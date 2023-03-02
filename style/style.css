@@ -1,0 +1,557 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    background-color: #1e1e1e;
+    color: aliceblue;
+    font-family: 'Manrope', sans-serif;
+}
+
+/*Header*/
+
+h2 {
+    margin: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 18pt;
+    font-weight: 500;
+    text-align: left;
+}
+
+h3 {
+    padding: 15px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 16pt;
+    font-weight: 400;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.header-link {
+    display: flex;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 18pt;
+    font-weight: 500;
+    text-align: right;
+    color: #BEBEBE;
+    text-decoration: none;
+    align-items: center;
+}
+
+.header-link:hover {
+    color: aliceblue;
+    text-shadow: 0 0 20px aliceblue;
+}
+
+.header-line {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1250px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #BEBEBE;
+}
+
+/*menu-top*/
+
+.menu-top {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 100%;
+    min-height: 150px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo {
+    max-width: 250px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+
+}
+
+.icon {
+    width: auto;
+    height: 20px;
+    padding: 0 15px;
+}
+
+.pain-top {
+    background-color: black;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 400;
+    color: #BEBEBE;
+    text-decoration: none;
+}
+
+.pain-top:hover {
+    color: aliceblue;
+    text-shadow: 0 0 20px aliceblue;
+}
+
+/*Menu-bottom*/
+
+.menu-bottom {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50px;
+    justify-content: space-around;
+    background-color: black;
+    border-bottom: 3px solid #BEBEBE;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+    padding: 0;
+    list-style: none;
+}
+
+.pain {
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    font-size: 15pt;
+    font-style: normal;
+    font-weight: 400;
+    color: #BEBEBE;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pain:hover {
+    color: aliceblue;
+    text-shadow: 0 0 20px aliceblue;
+}
+
+.active-link {
+    color: aliceblue;
+    text-shadow: 0 0 20px aliceblue;
+}
+
+/*Popup-sign-in*/
+
+.popup-sign-in {
+    display: none;
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #1e1e1e;
+}
+
+.logo-sw-gold {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.popup-header {
+    color: #BEBEBE;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #1e1e1e;
+    border: 2px solid gold;
+    border-radius: 7px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #BEBEBE;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    background-color: gold;
+    border: none;
+    border-radius: 50px;
+    color: rgb(30, 30, 30);
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.popup-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-registration {
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #BEBEBE;
+}
+
+.show-popup {
+    display: block;
+}
+
+.popup-registration:hover {
+    color: gold;
+    text-shadow: 0 0 20px gold;
+}
+
+/*Main*/
+
+.main {
+    margin: 0 auto;
+    max-width: 1750px;
+    width: 100%;
+}
+
+.zero-block {
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+}
+
+.button-gallery {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button-gold-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    background-color: gold;
+    border: none;
+    border-radius: 50px;
+    color: rgb(30, 30, 30);
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+.button-black-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    background-color: black;
+    border: 3px solid gold;
+    border-radius: 50px;
+    color: #bebebe;
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+/*Wall*/
+
+.wall {
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px;
+    max-width: 1750px;
+    max-height: 700px;
+    flex-direction: column;
+    background-image: url(../img/wall-2.png);
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+.img-wall {
+    max-width: 1500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo-wall {
+    max-width: 450px;
+    height: auto;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.text-wall {
+    width: 350px;
+    margin: 50px 0;
+}
+
+
+/*Interactive-wall*/
+
+.interactive-wall {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    max-height: 700px;
+    background-image: url(../img/The-Bad-Batch-1.jpg);
+    background-size: cover;
+}
+
+.interactive-wall-column {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    max-height: 500px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.interactive-wall-logo {
+    margin-bottom: 20px;
+    padding: 0;
+    max-width: 500px;
+    height: auto;
+
+}
+
+.interactive-wall-text {
+    margin-bottom: 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 18pt;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*Interective-Wall-Gllery*/
+
+.interactive-wall-gallery {
+    display: flex;
+    max-width: 1750px;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+    background-image: url(../img/);
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+}
+
+.interactive-wall-card {
+    display: flex;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    max-width: 800px;
+    height: auto;
+    background-color: black;
+    border-radius: 7px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.interactive-wall-img {
+    max-width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Gallery*/
+
+.gallery-line {
+    display: block;
+    margin: 50px 0 50px 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1250px;
+    max-height: 430px;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.gallery-card {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    max-height: 300;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: black;
+    border: none;
+    border-radius: 7px;
+}
+
+.gallery-img {
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.gallery-text {
+    padding: 15px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 14pt;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+/*Footer*/
+
+.footer-style {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 80px;
+    height: auto;
+    background-color: black;
+}
+
+
+.footer-group-1 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-pain {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 400;
+    color: #BEBEBE;
+
+}
+
+/*Form*/
+
+/*
+.footer-form {
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-style {
+    align-items: center;
+    color: #BEBEBE;
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+.form-header {
+    display: flex;
+    margin: 80px 0 30px 0;
+    color: #fefefe;
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: 400;
+}
+
+.form-window {
+    width: 350px;
+    height: 50px;
+    margin: 0 50px 0 15px;
+    background-color: black;
+    border-radius: 7px;
+    border: 2px solid gold;
+}
+
+.footer-button {
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    border-radius: 50px;
+    color: rgb(30, 30, 30);
+    font-family: 'Manrope';
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 600;
+
+}
